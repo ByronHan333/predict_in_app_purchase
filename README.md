@@ -22,6 +22,6 @@ Link to our report: https://docs.google.com/document/d/12j8hKCXUYszMiQKi9ygWZ7IU
 
 
 Role:  
-Byron: EDA, Feature Engineering and Modelling
+Byron: EDA, Feature Engineering and Modelling  
 Gokul: EDA, Feature Engineering and Modelling  
 Lance: EDA, Visualization   
