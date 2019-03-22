@@ -2,7 +2,8 @@
 
 Team Name: OperationOverFit   
 Kaggle LeaderBoard Score: 0.987  
-Link to our repo: https://github.com/USF-ML2/final-project-operationoverfit  
+Link to our presentation: https://docs.google.com/presentation/d/1X4RAxvb30PgD_HUYoMiONH00pIYmX0pny8GYXx5rbQw/edit#slide=id.gc6f75fceb_0_0
+Link to our report: https://docs.google.com/document/d/12j8hKCXUYszMiQKi9ygWZ7IUInOefc2XgSukd3_6zyc/edit  
 
 * EDA:
 	- [EDA visualization](https://github.com/USF-ML2/final-project-operationoverfit/blob/master/EDA/Visualizations.ipynb)
