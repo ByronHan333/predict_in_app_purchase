@@ -1,0 +1,88 @@
+
+~~~~~~~~ SESSIONS ~~~~~~~~~
+app_id: application id
+
+session_id: randomly generated id for the session
+
+start_timestamp: epoch (milliseconds) of session start
+
+user_id_hash: user id
+
+session_index: lifetime count of sessions
+
+is_session: whether or not the given session is an online session or offline session (true=online, null=offline)
+
+is_developer: whether or not the given user is a mobile developer (developers are not real app users) (true=developer, null=not developer)
+
+is_wau: whether this record should be counted as a weekly active user for this day (true/null)
+
+is_mau: whether this record should be counted as a weekly active user for this day (true/null)
+
+user_created_timestamp: epoch (milliseconds) of when the user was created
+
+is_user_first_session: whether or not the given session is user's first session with the app (true/null)
+
+previous_session_duration: length of last session in seconds
+
+device_id: mobile device id associated with the session
+
+os_name: mobile operating system
+
+timezone: user's timezone during the session
+
+timezone_offset: user's timezone offset against UTC
+
+country: user's country during the session
+
+region: user's region during the session
+
+city: user's city during the session
+
+latitude: user's latitude at session start
+
+longitude: user's longitude at session start
+
+locale: user's local during the session
+
+
+
+~~~~~~~~ Events ~~~~~~~~~
+app_id: application id
+
+session_id: randomly generated id for the current session
+
+user_id_hash: user id
+
+event: event name (there are 4 types of events: 1. custom defined events, integers; 2. messages related ".m<message_id> <action>" (if no action attached, it means it is a message sent event); 3. campaign related: ".c<campaign_id> <action>"; 4. AB test related, ".a<ab test id>")
+
+event_timestamp: UTC Timestamp (Millisec) of when the event was triggered
+
+event_value: value associated with event (present if the customer is passing values to the "value" parameter of the event)
+
+
+
+~~~~~~~~ Attributes ~~~~~~~~~
+app_id: application id
+
+session_id: randomly generated for the session
+
+user_id_hash: user id
+
+attribute: attribute name
+
+attribute_value: value of the attribute
+
+
+
+~~~~~~~~ Messages ~~~~~~~~~
+app_id: application id
+
+message_id: message id
+
+action_type: type of the message
+
+delivery_type: (0: immediate, 1: scheduled, 2: manual, 3: trigger locally, 4: trigger server side, 5: recurring)
+
+delivery_time_mode: (0: browser time, 1: UTC, 2: user timezone, 3: optimal time)
+
+goal_kind: (0: metric, 1: funnel, 2: stack, 3: event, 4: state, 5: filtered, 6: user action)
